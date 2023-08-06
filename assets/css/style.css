@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "nav nav" "aside menu" "footer footer";
+  height: 100vh;
+  grid-template-rows: 7% auto 3%;
+  grid-template-columns: 17% auto;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(70, 70, 119);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  grid-area: aside;
+  background-color: rgb(208, 208, 216);
+  border: 1px solid rgba(238, 236, 236, 0.664);
+}
+
+aside h2 {
+  margin-left: 30px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+menu {
+  grid-area: menu;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: rgb(208, 208, 216);
+}
+
+.carta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.5rem;
+  height: 98%;
+  width: 90%;
+  background-color: rgb(234, 234, 236);
+  border-radius: 5px;
+}
+
+.carta h5 {
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+.carta p {
+  margin: 5px;
+}
+
+.carta button {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(70, 70, 119);
+  color: white;
+  border: none;
+}
+
+.cart {
+  border: 1px solid rgb(241, 239, 239);
+  height: 85%;
+  width: 90%;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.cart img {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: footer;
+  background-color: rgb(236, 236, 240);
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding: 3px;
+}
